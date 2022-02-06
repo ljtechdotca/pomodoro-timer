@@ -1,0 +1,19 @@
+.root {
+  display: grid;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.button {
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+}

@@ -1,0 +1,21 @@
+.root {
+  display: grid;
+  border-bottom: 1px solid #ddd;
+  height: 2.5rem;
+}
+
+.container {
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 100;
+}
+
+.button {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

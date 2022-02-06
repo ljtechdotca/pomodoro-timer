@@ -1,0 +1,86 @@
+.root {
+  display: grid;
+  place-items: center center;
+  row-gap: 0.25rem;
+}
+
+.container {
+  display: grid;
+  place-items: center center;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.value {
+  font-weight: 600;
+  background-color: var(--background);
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  border-radius: 0.125rem;
+}
+
+.input {
+  margin: 1rem 0;
+  -webkit-appearance: none;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-runnable-track {
+    height: 0.125rem;
+    cursor: pointer;
+    background-color: var(--background);
+  }
+  &::-webkit-slider-thumb {
+    border: 1px solid var(--background);
+    background-color: var(--background);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.4375rem;
+  }
+  &__red {
+    @extend .input;
+    &::-webkit-slider-runnable-track {
+      background-color: var(--red);
+    }
+    &::-webkit-slider-thumb {
+      border-color: var(--red);
+      background-color: var(--red);
+    }
+  }
+  &__green {
+    @extend .input;
+    &::-webkit-slider-runnable-track {
+      background-color: var(--green);
+    }
+    &::-webkit-slider-thumb {
+      border-color: var(--green);
+      background-color: var(--green);
+    }
+  }
+  &__blue {
+    @extend .input;
+    &::-webkit-slider-runnable-track {
+      background-color: var(--blue);
+    }
+    &::-webkit-slider-thumb {
+      border-color: var(--blue);
+      background-color: var(--blue);
+    }
+  }
+  &__grey {
+    @extend .input;
+    &::-webkit-slider-runnable-track {
+      background-color: var(--accent-2);
+    }
+    &::-webkit-slider-thumb {
+      border-color: var(--accent-2);
+      background-color: var(--accent-2);
+    }
+  }
+}

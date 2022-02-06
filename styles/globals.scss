@@ -1,0 +1,32 @@
+:root {
+  --accent-1: #f8f8f8;
+  --accent-2: #dddddd;
+  --background: #ffffff;
+  --foreground: #000000;
+  --blue: #1e90ff;
+  --green: #0acf83;
+  --red: #f03b3b;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background-color: unset;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+body {
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

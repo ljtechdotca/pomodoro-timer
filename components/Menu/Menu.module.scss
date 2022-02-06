@@ -1,0 +1,28 @@
+.root {
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  background-color: var(--accent-1);
+  // width: 100%;
+}
+
+.container {
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  justify-content: center;
+}
+
+.button {
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+}

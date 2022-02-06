@@ -1,0 +1,9 @@
+.root {
+  display: grid;
+}
+
+.container {
+  display: grid;
+  place-items: center center;
+  min-height: calc(100vh - (2.5rem + 1px));
+}

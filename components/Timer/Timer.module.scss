@@ -1,0 +1,54 @@
+.root {
+  display: grid;
+  position: relative;
+}
+
+.container {
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  z-index: 90;
+  position: relative;
+}
+
+.rounds {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.time {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.svg {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 50;
+  pointer-events: none;
+  &__base {
+    @extend .svg;
+    z-index: 40;
+  }
+}
+
+.circle {
+  fill: transparent;
+  transition: 1s linear stroke-dashoffset;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-linecap: round;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  column-gap: 1rem;
+  justify-content: center;
+}
